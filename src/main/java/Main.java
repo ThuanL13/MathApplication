@@ -1,3 +1,6 @@
+import java.util.Arrays;
+import java.util.Scanner;     // import the Scanner class
+import java.util.*;
 public class Main {
     public static void main(String[] args) {
         // Question 1:
@@ -70,7 +73,43 @@ public class Main {
         System.out.println("There are " + (days * hoursDay * minutesHour *
                 secondsInMinutes * miliseconds) + " miliseconds in 24 days");
 
+        // Scanner work
+        Scanner read = new Scanner(System.in);
+        System.out.print("What is your name? ");
+        String name = read.nextLine();
+        System.out.println("I read the name " + name);
 
+        System.out.println("What is your age? ");
+        int age = read.nextInt();
+        System.out.println("I read the age: " + age);
+
+        read.nextLine(); // Reads the next line
+
+        System.out.println("What is your favorite movie? ");
+        String movie = read.nextLine();
+        System.out.println("Favorite movie is: " + movie);
+
+        System.out.println("How many hours a day do you watch movies? ");
+        double movieHours = read.nextDouble();
+        System.out.println("You watch " + movieHours + " hours");
+
+        // Create a Scanner
+        Scanner scanner = new Scanner(System.in);
+
+        // Ask the user for input
+        System.out.print("What is your name? ");
+        String myName = scanner.nextLine();
+
+        System.out.print("How old are you? ");
+        int yourAge = scanner.nextInt();
+
+        // Display the results
+        System.out.println("Hello " + name + "!");
+        System.out.println("You are " + age + " years old.");
+
+        // Close the Scanner
+        read.close();
+        scanner.close();
 
 
 
